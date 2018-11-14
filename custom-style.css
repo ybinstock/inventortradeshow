@@ -1,0 +1,75 @@
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+#img-upload {
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 0 !important;
+  margin-left: 10px !important;
+  margin-right: 50% !important;
+  margin-top: 29px !important;
+}
+
+.my-card {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+.my-img {
+  height: 10em;
+  width: 10em;
+}
+
+.my-card-subtitle {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.img-input {
+  margin-top: 0px !important;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+input:checked + .card-body{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
